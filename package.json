@@ -12,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": [
     ">0.2%",
@@ -21,8 +23,14 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-knobs": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
