@@ -9,6 +9,7 @@
   "rules": {
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
+    "react/jsx-one-expression-per-line": 1,
     "react/jsx-filename-extension": [
       1,
       {

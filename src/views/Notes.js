@@ -1,5 +1,55 @@
 import React from 'react';
+import UserPageTemplate from 'templates/UserPageTemplate';
+import PropTypes from 'prop-types';
+import Card from 'components/molecules/Card/Card';
 
-const Notes = () => <h1>Notes</h1>;
+const notes = [
+  {
+    id: 1,
+    title: 'Wake me up when Vue ends',
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
+    created: '1 day',
+  },
+  {
+    id: 2,
+    title: 'Como es An Gular?',
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
+    created: '1 day',
+  },
+  {
+    id: 3,
+    title: 'Du bist Reactish',
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
+    created: '5 days',
+  },
+  {
+    id: 4,
+    title: 'Reactuj się kto moze!',
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, tempora quibusdam natus modi tempore esse adipisci, dolore odit animi',
+    created: '10 days',
+  },
+];
+
+const Notes = () => (
+  <UserPageTemplate pageType="note">
+    {notes.map(({
+      id, title, content, created,
+    }) => (
+      <Card key={id} title={title} content={content} created={created} cardType="note" />
+    ))}
+  </UserPageTemplate>
+);
+
+UserPageTemplate.propTypes = {
+  pageType: PropTypes.oneOf(['article', 'twitter', 'note']),
+};
+
+UserPageTemplate.defaultProps = {
+  pageType: 'note',
+};
 
 export default Notes;
