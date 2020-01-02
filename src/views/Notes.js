@@ -36,9 +36,7 @@ const notes = [
 
 const Notes = () => (
   <UserPageTemplate pageType="note">
-    {notes.map(({
-      id, title, content, created,
-    }) => (
+    {notes.map(({ id, title, content, created }) => (
       <Card key={id} title={title} content={content} created={created} cardType="note" />
     ))}
   </UserPageTemplate>

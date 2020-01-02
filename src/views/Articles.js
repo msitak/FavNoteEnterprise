@@ -40,9 +40,7 @@ const articles = [
 
 const Articles = () => (
   <UserPageTemplate pageType="article">
-    {articles.map(({
-      id, title, content, articleUrl, created,
-    }) => (
+    {articles.map(({ id, title, content, articleUrl, created }) => (
       <Card
         key={id}
         title={title}

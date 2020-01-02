@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter, Switch, Route, Redirect,
-} from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import MainTemplate from 'templates/MainTemplate';
 import Articles from 'views/Articles';
 import Notes from 'views/Notes';

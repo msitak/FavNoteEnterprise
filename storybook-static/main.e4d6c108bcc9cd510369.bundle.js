@@ -34,8 +34,8 @@
       }
       const ButtonIcon = __webpack_require__(3).c.button(
         _templateObject(),
-        (_ref) => _ref.icon,
-        (_ref2) => (_ref2.active ? 'white' : 'transparent'),
+        _ref => _ref.icon,
+        _ref2 => (_ref2.active ? 'white' : 'transparent'),
       );
       __webpack_exports__.a = ButtonIcon;
     },
@@ -52,7 +52,12 @@
         light: 300,
         bold: 600,
         fontSize: {
-          xxs: '1rem', xs: '1.2rem', s: '1.6rem', m: '2.1rem', l: '2.4rem', xl: '4rem',
+          xxs: '1rem',
+          xs: '1.2rem',
+          s: '1.6rem',
+          m: '2.1rem',
+          l: '2.4rem',
+          xl: '4rem',
         },
       };
     },
@@ -70,30 +75,32 @@
     },
     377(module, exports, __webpack_require__) {
       __webpack_require__(378),
-      __webpack_require__(520),
-      (module.exports = __webpack_require__(521));
+        __webpack_require__(520),
+        (module.exports = __webpack_require__(521));
     },
     439(module, exports) {},
     521(module, __webpack_exports__, __webpack_require__) {
       __webpack_require__.r(__webpack_exports__),
-      function (module) {
-        const react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-        const react__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(
-          react__WEBPACK_IMPORTED_MODULE_0__,
-        );
-        const _storybook_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(219);
-        const styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-        const _src_theme_mainTheme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(365);
-        Object(_storybook_react__WEBPACK_IMPORTED_MODULE_1__.addDecorator)((story) => react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-          styled_components__WEBPACK_IMPORTED_MODULE_2__.a,
-          { theme: _src_theme_mainTheme__WEBPACK_IMPORTED_MODULE_3__.a },
-          story(),
-        )),
-        Object(_storybook_react__WEBPACK_IMPORTED_MODULE_1__.configure)(
-          __webpack_require__(766),
-          module,
-        );
-      }.call(this, __webpack_require__(522)(module));
+        function(module) {
+          const react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+          const react__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(
+            react__WEBPACK_IMPORTED_MODULE_0__,
+          );
+          const _storybook_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(219);
+          const styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+          const _src_theme_mainTheme__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(365);
+          Object(_storybook_react__WEBPACK_IMPORTED_MODULE_1__.addDecorator)(story =>
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+              styled_components__WEBPACK_IMPORTED_MODULE_2__.a,
+              { theme: _src_theme_mainTheme__WEBPACK_IMPORTED_MODULE_3__.a },
+              story(),
+            ),
+          ),
+            Object(_storybook_react__WEBPACK_IMPORTED_MODULE_1__.configure)(
+              __webpack_require__(766),
+              module,
+            );
+        }.call(this, __webpack_require__(522)(module));
     },
     766(module, exports, __webpack_require__) {
       const map = {
@@ -119,14 +126,14 @@
       (webpackContext.keys = function webpackContextKeys() {
         return Object.keys(map);
       }),
-      (webpackContext.resolve = webpackContextResolve),
-      (module.exports = webpackContext),
-      (webpackContext.id = 766);
+        (webpackContext.resolve = webpackContextResolve),
+        (module.exports = webpackContext),
+        (webpackContext.id = 766);
     },
     767(module, __webpack_exports__, __webpack_require__) {
       __webpack_require__.r(__webpack_exports__),
-      __webpack_require__.d(__webpack_exports__, 'Primary', () => Primary),
-      __webpack_require__.d(__webpack_exports__, 'Secondary', () => Secondary);
+        __webpack_require__.d(__webpack_exports__, 'Primary', () => Primary),
+        __webpack_require__.d(__webpack_exports__, 'Secondary', () => Secondary);
       const react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
       const react__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(
         react__WEBPACK_IMPORTED_MODULE_0__,
@@ -163,15 +170,15 @@
         );
       };
       (Primary.__docgenInfo = { description: '', methods: [], displayName: 'Primary' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Button/Button.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Button/Button.stories.js'] = {
             name: 'Primary',
             docgenInfo: Primary.__docgenInfo,
             path: 'src/components/atoms/Button/Button.stories.js',
           }),
-      (Secondary.__docgenInfo = { description: '', methods: [], displayName: 'Secondary' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Button/Button.stories.js'] = {
+        (Secondary.__docgenInfo = { description: '', methods: [], displayName: 'Secondary' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Button/Button.stories.js'] = {
             name: 'Secondary',
             docgenInfo: Secondary.__docgenInfo,
             path: 'src/components/atoms/Button/Button.stories.js',
@@ -179,11 +186,11 @@
     },
     802(module, __webpack_exports__, __webpack_require__) {
       __webpack_require__.r(__webpack_exports__),
-      __webpack_require__.d(__webpack_exports__, 'Bulb', () => Bulb),
-      __webpack_require__.d(__webpack_exports__, 'Logout', () => Logout),
-      __webpack_require__.d(__webpack_exports__, 'Pen', () => Pen),
-      __webpack_require__.d(__webpack_exports__, 'Plus', () => Plus),
-      __webpack_require__.d(__webpack_exports__, 'Twitter', () => Twitter);
+        __webpack_require__.d(__webpack_exports__, 'Bulb', () => Bulb),
+        __webpack_require__.d(__webpack_exports__, 'Logout', () => Logout),
+        __webpack_require__.d(__webpack_exports__, 'Pen', () => Pen),
+        __webpack_require__.d(__webpack_exports__, 'Plus', () => Plus),
+        __webpack_require__.d(__webpack_exports__, 'Twitter', () => Twitter);
       const _Users_michael_Desktop_repos_favnote_FavNoteEnterprise_node_modules_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
         4,
       );
@@ -229,13 +236,13 @@
       }
       const YellowBackground = styled_components__WEBPACK_IMPORTED_MODULE_2__.c.div(
         _templateObject(),
-        (_ref) => _ref.theme.note,
+        _ref => _ref.theme.note,
       );
       __webpack_exports__.default = {
         title: 'Atoms/ButtonIcon',
         component: _ButtonIcon__WEBPACK_IMPORTED_MODULE_8__.a,
         decorators: [
-          function (story) {
+          function(story) {
             return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(
               YellowBackground,
               null,
@@ -275,36 +282,36 @@
         );
       };
       (Bulb.__docgenInfo = { description: '', methods: [], displayName: 'Bulb' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
             name: 'Bulb',
             docgenInfo: Bulb.__docgenInfo,
             path: 'src/components/atoms/ButtonIcon/ButtonIcon.stories.js',
           }),
-      (Logout.__docgenInfo = { description: '', methods: [], displayName: 'Logout' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
+        (Logout.__docgenInfo = { description: '', methods: [], displayName: 'Logout' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
             name: 'Logout',
             docgenInfo: Logout.__docgenInfo,
             path: 'src/components/atoms/ButtonIcon/ButtonIcon.stories.js',
           }),
-      (Pen.__docgenInfo = { description: '', methods: [], displayName: 'Pen' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
+        (Pen.__docgenInfo = { description: '', methods: [], displayName: 'Pen' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
             name: 'Pen',
             docgenInfo: Pen.__docgenInfo,
             path: 'src/components/atoms/ButtonIcon/ButtonIcon.stories.js',
           }),
-      (Plus.__docgenInfo = { description: '', methods: [], displayName: 'Plus' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
+        (Plus.__docgenInfo = { description: '', methods: [], displayName: 'Plus' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
             name: 'Plus',
             docgenInfo: Plus.__docgenInfo,
             path: 'src/components/atoms/ButtonIcon/ButtonIcon.stories.js',
           }),
-      (Twitter.__docgenInfo = { description: '', methods: [], displayName: 'Twitter' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
+        (Twitter.__docgenInfo = { description: '', methods: [], displayName: 'Twitter' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/ButtonIcon/ButtonIcon.stories.js'] = {
             name: 'Twitter',
             docgenInfo: Twitter.__docgenInfo,
             path: 'src/components/atoms/ButtonIcon/ButtonIcon.stories.js',
@@ -312,8 +319,8 @@
     },
     803(module, __webpack_exports__, __webpack_require__) {
       __webpack_require__.r(__webpack_exports__),
-      __webpack_require__.d(__webpack_exports__, 'Bigger', () => Bigger),
-      __webpack_require__.d(__webpack_exports__, 'Smaller', () => Smaller);
+        __webpack_require__.d(__webpack_exports__, 'Bigger', () => Bigger),
+        __webpack_require__.d(__webpack_exports__, 'Smaller', () => Smaller);
       const react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
       const react__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(
         react__WEBPACK_IMPORTED_MODULE_0__,
@@ -350,15 +357,15 @@
         );
       };
       (Bigger.__docgenInfo = { description: '', methods: [], displayName: 'Bigger' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Heading/Heading.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Heading/Heading.stories.js'] = {
             name: 'Bigger',
             docgenInfo: Bigger.__docgenInfo,
             path: 'src/components/atoms/Heading/Heading.stories.js',
           }),
-      (Smaller.__docgenInfo = { description: '', methods: [], displayName: 'Smaller' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Heading/Heading.stories.js'] = {
+        (Smaller.__docgenInfo = { description: '', methods: [], displayName: 'Smaller' }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Heading/Heading.stories.js'] = {
             name: 'Smaller',
             docgenInfo: Smaller.__docgenInfo,
             path: 'src/components/atoms/Heading/Heading.stories.js',
@@ -366,7 +373,7 @@
     },
     804(module, __webpack_exports__, __webpack_require__) {
       __webpack_require__.r(__webpack_exports__),
-      __webpack_require__.d(__webpack_exports__, 'Regular', () => Regular);
+        __webpack_require__.d(__webpack_exports__, 'Regular', () => Regular);
       const react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
       const react__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(
         react__WEBPACK_IMPORTED_MODULE_0__,
@@ -391,8 +398,8 @@
         );
       };
       (Regular.__docgenInfo = { description: '', methods: [], displayName: 'Regular' }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Paragraph/Paragraph.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Paragraph/Paragraph.stories.js'] = {
             name: 'Regular',
             docgenInfo: Regular.__docgenInfo,
             path: 'src/components/atoms/Paragraph/Paragraph.stories.js',
@@ -437,21 +444,20 @@
       }
       const Input_Input = styled_components_browser_esm.c.input(
         _templateObject(),
-        (_ref) => _ref.theme.fontSize.s,
-        (_ref2) => _ref2.theme.regular,
-        (_ref3) => _ref3.theme.grey100,
-        (_ref4) => _ref4.theme.grey300,
-        (_ref5) => (
-          _ref5.search
-            && Object(styled_components_browser_esm.b)(
-              _templateObject2(),
-              (_ref6) => _ref6.theme.fontSize.xs,
-              magnifier_default.a,
-            )
-        ),
+        _ref => _ref.theme.fontSize.s,
+        _ref2 => _ref2.theme.regular,
+        _ref3 => _ref3.theme.grey100,
+        _ref4 => _ref4.theme.grey300,
+        _ref5 =>
+          _ref5.search &&
+          Object(styled_components_browser_esm.b)(
+            _templateObject2(),
+            _ref6 => _ref6.theme.fontSize.xs,
+            magnifier_default.a,
+          ),
       );
       __webpack_require__.d(__webpack_exports__, 'Regular', () => Input_stories_Regular),
-      __webpack_require__.d(__webpack_exports__, 'SearchBar', () => Input_stories_SearchBar);
+        __webpack_require__.d(__webpack_exports__, 'SearchBar', () => Input_stories_SearchBar);
       __webpack_exports__.default = { component: Input_Input, title: 'Atoms/Input' };
       var Input_stories_Regular = function Regular() {
         return react_default.a.createElement(Input_Input, { placeholder: 'login' });
@@ -464,19 +470,19 @@
         methods: [],
         displayName: 'Regular',
       }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Input/Input.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Input/Input.stories.js'] = {
             name: 'Regular',
             docgenInfo: Input_stories_Regular.__docgenInfo,
             path: 'src/components/atoms/Input/Input.stories.js',
           }),
-      (Input_stories_SearchBar.__docgenInfo = {
-        description: '',
-        methods: [],
-        displayName: 'SearchBar',
-      }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/atoms/Input/Input.stories.js'] = {
+        (Input_stories_SearchBar.__docgenInfo = {
+          description: '',
+          methods: [],
+          displayName: 'SearchBar',
+        }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/atoms/Input/Input.stories.js'] = {
             name: 'SearchBar',
             docgenInfo: Input_stories_SearchBar.__docgenInfo,
             path: 'src/components/atoms/Input/Input.stories.js',
@@ -577,21 +583,27 @@
       const StyledWrapper = styled_components_browser_esm.c.div(_templateObject());
       const InnerWrapper = styled_components_browser_esm.c.div(
         _templateObject2(),
-        (_ref) => {
+        _ref => {
           const { activeColor } = _ref;
           const { theme } = _ref;
           return activeColor ? theme[activeColor] : 'white';
         },
-        (_ref2) => _ref2.flex && Object(styled_components_browser_esm.b)(_templateObject3()),
+        _ref2 => _ref2.flex && Object(styled_components_browser_esm.b)(_templateObject3()),
       );
       const DateInfo = Object(styled_components_browser_esm.c)(Paragraph.a)(
         _templateObject4(),
-        (_ref3) => _ref3.theme.bold,
-        (_ref4) => _ref4.theme.fontSize.xs,
+        _ref3 => _ref3.theme.bold,
+        _ref4 => _ref4.theme.fontSize.xs,
       );
       const StyledHeading = Object(styled_components_browser_esm.c)(Heading.a)(_templateObject5());
-      const StyledAvatar = styled_components_browser_esm.c.img(_templateObject6(), (_ref5) => _ref5.theme.twitter);
-      const StyledLinkButton = styled_components_browser_esm.c.a(_templateObject7(), link_default.a);
+      const StyledAvatar = styled_components_browser_esm.c.img(
+        _templateObject6(),
+        _ref5 => _ref5.theme.twitter,
+      );
+      const StyledLinkButton = styled_components_browser_esm.c.a(
+        _templateObject7(),
+        link_default.a,
+      );
       const Card_Card = function Card(_ref6) {
         const { cardType } = _ref6;
         return react_default.a.createElement(
@@ -602,12 +614,12 @@
             { activeColor: cardType },
             react_default.a.createElement(StyledHeading, null, 'Hello Micheal'),
             react_default.a.createElement(DateInfo, null, '3 days'),
-            cardType === 'twitter'
-                && react_default.a.createElement(StyledAvatar, {
-                  src: 'https://avatars.io/twitter/hello_roman',
-                }),
-            cardType === 'article'
-                && react_default.a.createElement(StyledLinkButton, { href: 'https://helloroman.com' }),
+            cardType === 'twitter' &&
+              react_default.a.createElement(StyledAvatar, {
+                src: 'https://avatars.io/twitter/hello_roman',
+              }),
+            cardType === 'article' &&
+              react_default.a.createElement(StyledLinkButton, { href: 'https://helloroman.com' }),
           ),
           react_default.a.createElement(
             InnerWrapper,
@@ -622,22 +634,22 @@
         );
       };
       (Card_Card.defaultProps = { cardType: 'note' }),
-      (Card_Card.__docgenInfo = {
-        description: '',
-        methods: [],
-        displayName: 'Card',
-        props: { cardType: { defaultValue: { value: "'note'", computed: !1 }, required: !1 } },
-      });
+        (Card_Card.__docgenInfo = {
+          description: '',
+          methods: [],
+          displayName: 'Card',
+          props: { cardType: { defaultValue: { value: "'note'", computed: !1 }, required: !1 } },
+        });
       const molecules_Card_Card = Card_Card;
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-        && (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.js'] = {
+      typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+        (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.js'] = {
           name: 'Card',
           docgenInfo: Card_Card.__docgenInfo,
           path: 'src/components/molecules/Card/Card.js',
         }),
-      __webpack_require__.d(__webpack_exports__, 'Primary', () => Card_stories_Primary),
-      __webpack_require__.d(__webpack_exports__, 'Secondary', () => Card_stories_Secondary),
-      __webpack_require__.d(__webpack_exports__, 'Tertiary', () => Card_stories_Tertiary);
+        __webpack_require__.d(__webpack_exports__, 'Primary', () => Card_stories_Primary),
+        __webpack_require__.d(__webpack_exports__, 'Secondary', () => Card_stories_Secondary),
+        __webpack_require__.d(__webpack_exports__, 'Tertiary', () => Card_stories_Tertiary);
       __webpack_exports__.default = { component: molecules_Card_Card, title: 'Molecules/Card' };
       var Card_stories_Primary = function Primary() {
         return react_default.a.createElement(molecules_Card_Card, null);
@@ -653,30 +665,30 @@
         methods: [],
         displayName: 'Primary',
       }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
             name: 'Primary',
             docgenInfo: Card_stories_Primary.__docgenInfo,
             path: 'src/components/molecules/Card/Card.stories.js',
           }),
-      (Card_stories_Secondary.__docgenInfo = {
-        description: '',
-        methods: [],
-        displayName: 'Secondary',
-      }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
+        (Card_stories_Secondary.__docgenInfo = {
+          description: '',
+          methods: [],
+          displayName: 'Secondary',
+        }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
             name: 'Secondary',
             docgenInfo: Card_stories_Secondary.__docgenInfo,
             path: 'src/components/molecules/Card/Card.stories.js',
           }),
-      (Card_stories_Tertiary.__docgenInfo = {
-        description: '',
-        methods: [],
-        displayName: 'Tertiary',
-      }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
+        (Card_stories_Tertiary.__docgenInfo = {
+          description: '',
+          methods: [],
+          displayName: 'Tertiary',
+        }),
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/molecules/Card/Card.stories.js'] = {
             name: 'Tertiary',
             docgenInfo: Card_stories_Tertiary.__docgenInfo,
             path: 'src/components/molecules/Card/Card.stories.js',
@@ -734,7 +746,10 @@
           data
         );
       }
-      const StyledWrapper = styled_components_browser_esm.c.div(_templateObject(), (_ref) => _ref.theme.twitter);
+      const StyledWrapper = styled_components_browser_esm.c.div(
+        _templateObject(),
+        _ref => _ref.theme.twitter,
+      );
       const StyledLogo = styled_components_browser_esm.c.img(_templateObject2());
       const ButtonsList = styled_components_browser_esm.c.div(_templateObject3());
       const Sidebar_Sidebar = function Sidebar() {
@@ -782,13 +797,13 @@
       };
       Sidebar_Sidebar.__docgenInfo = { description: '', methods: [], displayName: 'Sidebar' };
       const organisms_Sidebar_Sidebar = Sidebar_Sidebar;
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-        && (STORYBOOK_REACT_CLASSES['src/components/organisms/Sidebar/Sidebar.js'] = {
+      typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+        (STORYBOOK_REACT_CLASSES['src/components/organisms/Sidebar/Sidebar.js'] = {
           name: 'Sidebar',
           docgenInfo: Sidebar_Sidebar.__docgenInfo,
           path: 'src/components/organisms/Sidebar/Sidebar.js',
         }),
-      __webpack_require__.d(__webpack_exports__, 'Regular', () => Sidebar_stories_Regular);
+        __webpack_require__.d(__webpack_exports__, 'Regular', () => Sidebar_stories_Regular);
       __webpack_exports__.default = {
         component: organisms_Sidebar_Sidebar,
         title: 'Organisms/Sidebar',
@@ -802,8 +817,8 @@
         methods: [],
         displayName: 'Regular',
       }),
-      typeof STORYBOOK_REACT_CLASSES !== 'undefined'
-          && (STORYBOOK_REACT_CLASSES['src/components/organisms/Sidebar/Sidebar.stories.js'] = {
+        typeof STORYBOOK_REACT_CLASSES !== 'undefined' &&
+          (STORYBOOK_REACT_CLASSES['src/components/organisms/Sidebar/Sidebar.stories.js'] = {
             name: 'Regular',
             docgenInfo: Sidebar_stories_Regular.__docgenInfo,
             path: 'src/components/organisms/Sidebar/Sidebar.stories.js',
@@ -845,16 +860,16 @@
       }
       const Button = styled_components__WEBPACK_IMPORTED_MODULE_1__.c.button(
         _templateObject(),
-        (_ref) => {
+        _ref => {
           const { theme } = _ref;
           return _ref.color || theme.note;
         },
-        (_ref2) => (
-          _ref2.secondary
-            && Object(styled_components__WEBPACK_IMPORTED_MODULE_1__.b)(_templateObject2(), (
-              _ref3,
-            ) => _ref3.theme.grey200)
-        ),
+        _ref2 =>
+          _ref2.secondary &&
+          Object(styled_components__WEBPACK_IMPORTED_MODULE_1__.b)(
+            _templateObject2(),
+            _ref3 => _ref3.theme.grey200,
+          ),
       );
       __webpack_exports__.a = Button;
     },
@@ -875,11 +890,11 @@
       }
       const Heading = __webpack_require__(3).c.h1(
         _templateObject(),
-        (_ref) => {
+        _ref => {
           const { theme } = _ref;
           return _ref.big ? theme.fontSize.xl : theme.fontSize.l;
         },
-        (_ref2) => _ref2.theme.bold,
+        _ref2 => _ref2.theme.bold,
       );
       __webpack_exports__.a = Heading;
     },
@@ -900,8 +915,8 @@
       }
       const Paragraph = __webpack_require__(3).c.p(
         _templateObject(),
-        (_ref) => _ref.theme.fontSize.s,
-        (_ref2) => _ref2.theme.regular,
+        _ref => _ref.theme.fontSize.s,
+        _ref2 => _ref2.theme.regular,
       );
       __webpack_exports__.a = Paragraph;
     },

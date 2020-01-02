@@ -40,9 +40,7 @@ const twitters = [
 
 const Twitters = () => (
   <UserPageTemplate pageType="twitter">
-    {twitters.map(({
-      id, title, content, created, twitterName,
-    }) => (
+    {twitters.map(({ id, title, content, created, twitterName }) => (
       <Card
         key={id}
         title={title}

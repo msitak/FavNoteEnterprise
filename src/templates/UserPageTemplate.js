@@ -36,14 +36,9 @@ const UserPageTemplate = ({ children, pageType }) => (
     <StyledPageHeader>
       <Input search placeholder="search" />
       <StyledHeading big as="h1">
-        {pageType}
-s
+        {pageType}s
       </StyledHeading>
-      <StyledParagraph>
-6
-        {pageType}
-s
-      </StyledParagraph>
+      <StyledParagraph>6{pageType}s</StyledParagraph>
     </StyledPageHeader>
     <StyledGridWrapper>{children}</StyledGridWrapper>
   </StyledWrapper>

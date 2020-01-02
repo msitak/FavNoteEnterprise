@@ -40,17 +40,5 @@
     "lint-staged": "^9.5.0",
     "prettier-eslint": "^9.0.1",
     "storybook-react-router": "^1.0.8"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --config .prettierrc --write",
-      "eslint --fix",
-      "git add"
-    ]
   }
 }

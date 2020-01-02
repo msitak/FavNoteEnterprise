@@ -25,8 +25,9 @@ const InnerWrapper = styled.div`
     z-index: 9999;
   }
 
-  ${({ flex }) => flex
-    && css`
+  ${({ flex }) =>
+    flex &&
+    css`
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -42,11 +43,12 @@ const DateInfo = styled(Paragraph)`
 const StyledHeading = styled(Heading)`
   margin: 5px 0 0;
 
-  ${({ cardType }) => (cardType !== 'note'
-    ? css`
+  ${({ cardType }) =>
+    cardType !== 'note'
+      ? css`
           padding-right: 73px;
         `
-    : '')}
+      : ''}
 `;
 
 const StyledAvatar = styled.img`
@@ -72,9 +74,7 @@ const StyledLinkButton = styled.a`
   transform: translateY(-50%);
 `;
 
-const Card = ({
-  cardType, title, created, twitterName, articleUrl, content,
-}) => (
+const Card = ({ cardType, title, created, twitterName, articleUrl, content }) => (
   <StyledWrapper>
     <InnerWrapper activeColor={cardType}>
       <StyledHeading cardType={cardType}>{title}</StyledHeading>
