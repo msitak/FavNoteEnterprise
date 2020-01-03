@@ -1,5 +1,5 @@
 import React from 'react';
-import UserPageTemplate from 'templates/UserPageTemplate';
+import GridTemplate from 'templates/GridTemplate';
 import PropTypes from 'prop-types';
 import Card from 'components/molecules/Card/Card';
 
@@ -39,26 +39,29 @@ const articles = [
 ];
 
 const Articles = () => (
-  <UserPageTemplate pageType="article">
-    {articles.map(({ id, title, content, articleUrl, created }) => (
+  <GridTemplate pageType="articles">
+    {articles.map(({
+      id, title, content, articleUrl, created,
+    }) => (
       <Card
         key={id}
+        id={id}
         title={title}
         articleUrl={articleUrl}
         created={created}
-        cardType="article"
+        cardType="articles"
         content={content}
       />
     ))}
-  </UserPageTemplate>
+  </GridTemplate>
 );
 
-UserPageTemplate.propTypes = {
-  pageType: PropTypes.oneOf(['article', 'twitter', 'note']),
+GridTemplate.propTypes = {
+  pageType: PropTypes.oneOf(['articles', 'twitters', 'notes']),
 };
 
-UserPageTemplate.defaultProps = {
-  pageType: 'note',
+GridTemplate.defaultProps = {
+  pageType: 'notes',
 };
 
 export default Articles;

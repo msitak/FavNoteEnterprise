@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import DetailsTemplate from 'templates/DetailsTemplate';
-import Sidebar from 'components/organisms/Sidebar/Sidebar';
+import { routes } from 'routes/index';
 
-const DetailsPage = () => (
-  <>
-    <Sidebar />
-    <DetailsTemplate />
-  </>
-);
+class DetailsPage extends Component {
+  state = {
+    pageType: 'notes',
+  };
+
+  componentDidMount() {
+    switch (this.props.match.path) {
+      case routes.twitter:
+        this.setState({ pageType: 'twitters' });
+        break;
+      case routes.note:
+        this.setState({ pageType: 'notes' });
+        break;
+      case routes.article:
+        this.setState({ pageType: 'articles' });
+        break;
+      default:
+        console.log('something went wrong with matching paths.');
+    }
+  }
+
+  render() {
+    const { pageType } = this.state;
+
+    return (
+      <DetailsTemplate pageType={pageType} />
+    );
+  }
+}
 
 export default DetailsPage;
