@@ -52,8 +52,12 @@ const StyledImage = styled.img`
   border-radius: 50%;
 `;
 
+const StyledButton = styled(Button)`
+  background-color: ${({ activecolor, theme }) => theme[activecolor]};
+`;
+
 const DetailsTemplate = ({
-  pageType, title, created, content, articleUrl, twitterName,
+  pageType, title, created, content, articleUrl, twitterName
 }) => (
   <UserPageTemplate pageType={pageType}>
     <StyledWrapper>
@@ -86,7 +90,7 @@ const DetailsTemplate = ({
       {pageType === 'twitters' && (
         <StyledImage alt={title} src="https://avatars.io/twitter/dan_abramov" />
       )}
-      <Button to={`/${pageType}`} activeColor={pageType}>
+      <Button as={Link} to={`/${pageType}`} activecolor={pageType}>
         save / close
       </Button>
     </StyledWrapper>
