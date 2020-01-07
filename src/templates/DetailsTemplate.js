@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import UserPageTemplate from 'templates/UserPageTemplate';
 import Heading from 'components/atoms/Heading/Heading';
@@ -31,13 +31,13 @@ const StyledHeading = styled(Heading)`
 
 const StyledParagraph = styled(Paragraph)`
   margin: 0;
-  font-weight: ${({theme}) => theme.bold};
+  font-weight: ${({ theme }) => theme.bold};
 `;
 
 const StyledLink = styled.a`
   display: block;
-  font-weight: ${({theme}) => theme.bold};
-  font-size: ${({theme}) => theme.fontSize.xs};
+  font-weight: ${({ theme }) => theme.bold};
+  font-size: ${({ theme }) => theme.fontSize.xs};
   color: black;
   text-transform: uppercase;
   margin: 20px 0 50px;
@@ -52,7 +52,9 @@ const StyledImage = styled.img`
   border-radius: 50%;
 `;
 
-const DetailsTemplate = ({pageType, title, created, content, articleUrl, twitterName}) => (
+const DetailsTemplate = ({
+  pageType, title, created, content, articleUrl, twitterName,
+}) => (
   <UserPageTemplate pageType={pageType}>
     <StyledWrapper>
       <StyledPageHeader>
@@ -82,7 +84,7 @@ const DetailsTemplate = ({pageType, title, created, content, articleUrl, twitter
       </Paragraph>
       {pageType === 'articles' && <StyledLink href="https://reactjs.org/">Open article</StyledLink>}
       {pageType === 'twitters' && (
-        <StyledImage alt={title} src="https://avatars.io/twitter/dan_abramov"/>
+        <StyledImage alt={title} src="https://avatars.io/twitter/dan_abramov" />
       )}
       <Button to={`/${pageType}`} activeColor={pageType}>
         save / close
