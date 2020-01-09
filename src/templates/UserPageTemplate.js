@@ -1,21 +1,22 @@
 import React from 'react';
 import Sidebar from 'components/organisms/Sidebar/Sidebar';
 import PropTypes from 'prop-types';
+import withContext from 'hoc/withContext';
 
-const UserPageTemplate = ({ children, pageType }) => (
+const UserPageTemplate = ({ children, pageContext }) => (
   <>
-    <Sidebar pageType={pageType} />
+    <Sidebar pageContext={pageContext} />
     {children}
   </>
 );
 
 UserPageTemplate.propTypes = {
   children: PropTypes.node.isRequired,
-  pageType: PropTypes.oneOf(['notes', 'twitters', 'articles']),
+  pageContext: PropTypes.oneOf(['notes', 'twitters', 'articles']),
 };
 
 UserPageTemplate.defaultProps = {
-  pageType: 'notes',
+  pageContext: 'notes',
 };
 
-export default UserPageTemplate;
+export default withContext(UserPageTemplate);
